@@ -6,12 +6,13 @@
     <meta name="reservation" content="Reservation page">
     <meta name="author" content="Deekay & Dongwoo">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/css/styles.css">
-    <link rel="stylesheet" href="/assets/css/nav.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/nav.css">
+    <link rel="icon" type="image/x-icon">
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <title>Reservation Page</title>
 
 </head>
@@ -20,144 +21,168 @@
     <!-- 
         header which will include logo and nav bar
      -->
-    
 
-        <nav class="navbar">
-            <span class="navbar-toggle" id="js-navbar-toggle">
+
+    <nav class="navbar">
+        <span class="navbar-toggle" id="js-navbar-toggle">
                 <i class="fas fa-bars"></i>
             </span>
-            <a href="/index.html"><img src="/assets/logo.png" alt="logo/home" class="logo" /></a>
-            <ul class="main-nav">
-                <li>
-                    <a href="/index.html" class="nav-links">Home</a>
-                </li>
-                <li>
-                    <a href="/information.html" class="nav-links">Information</a>
-                </li>
-                <li>
-                    <a href="/reservation.html" class="nav-links">Reservations</a>
-                </li>
-            </ul>
-        </nav>
+        <a href="/index.html"><img src="./assets/logo.png" alt="logo/home" class="logo" /></a>
+        <ul class="main-nav">
+            <li>
+                <a href="/index.html" class="nav-links">Home</a>
+            </li>
+            <li>
+                <a href="/information.html" class="nav-links">Information</a>
+            </li>
+            <li>
+                <a href="/reservation.html" class="nav-links">Reservations</a>
+            </li>
+        </ul>
+    </nav>
 
-        <!-- this is body section that will include each service -->
-        <main class="margin">
-            <div class="reservation_container">
-                <!-- ticket item section -->
-                <div class="ticket_section">
-                    <!-- Detailed description for tickets -->
-                    <p class="ticket_description">
+    <!-- this is body section that will include each service -->
+    <main class="margin">
+        <div class="reservation_container">
+            <!-- ticket item section -->
+            <div class="ticket_section">
+                <!-- Detailed description for tickets -->
+                <p class="ticket_description">
                     <div class=item_title>
                         <b> TICKET </b>
                     </div>
                     <div class=item_des>
-                        <p> Adult - 45€ </p> 
+                        <p> Adult - 45€ </p>
                         <p> Children - 30€ </p>
                     </div>
 
-                    </p>
-                    <!-- Purchase submission form -->
-                    <form class="purchase_info" method="post">
-                        <input class="text_field" type="number"> Adult(s) 
-                        <input class="text_field" type="number"> Kid(s) 
-                        <input class="purchase_button" type="submit" value="submit">
-                    </form>
+                </p>
+                <!-- Purchase submission form -->
+                <form class="purchase_info" method="post">
+                    <div class="grid-container-res">
+                        <input class="text_field" type="number">
+                        <div class="text_des">Adult(s)</div>
 
-                </div>
-                <!-- accomodation item section -->
-                <div class="acc_section">
-                    <!-- Detailed description for accomodation -->
-                    <p class="accomodation_description">
+                        <input class="text_field" type="number">
+                        <div class="text_des">Kid(s)</div>
+                    </div>
+                    <input class="purchase_button" type="submit" value="submit">
+                </form>
+
+            </div>
+            <!-- accomodation item section -->
+            <div class="acc_section">
+                <!-- Detailed description for accomodation -->
+                <p class="accomodation_description">
                     <div class=item_title>
                         <b> ACCOMODATION </b>
                     </div>
                     <div class=item_des>
                         <p> 100€/day </p>
                     </div>
-                    </p>
-                    <!-- Purchase submission form -->
-                    <form class="purchase_info" method="post">
-                        <input class="text_field" type="number"> Adult(s) 
-                        <input class="text_field" type="number"> Kid(s)
-                        <input class="purchase_button" type="submit" value="submit">
-                    </form>
-                </div>
-                <!-- restaurent item section -->
-                <div class="rest_section">
-                    <!-- Detailed description for restaurent -->
-                    <p class="restaurants_description">
+                </p>
+                <!-- Purchase submission form -->
+                <form class="purchase_info" method="post">
+                    <div class="grid-container-res">
+                        <input class="text_field" type="number">
+                        <div class="text_des">Adult(s)</div>
+
+                        <input class="text_field" type="number">
+                        <div class="text_des">Kid(s)</div>
+                    </div>
+                    <input class="purchase_button" type="submit" value="submit">
+                </form>
+            </div>
+            <!-- restaurent item section -->
+            <div class="rest_section">
+                <!-- Detailed description for restaurent -->
+                <p class="restaurants_description">
                     <div class=item_title>
                         <b> RESTAURANTS </b>
                     </div>
                     <div class=item_des>
                         <p> ALL YOU CAN EAT ! </p>
 
-                        <p > Adult - 25€ </p>
-                        <p > Children - 15€ </p>
+                        <p> Adult - 25€ </p>
+                        <p> Children - 15€ </p>
                     </div>
-                    </p>
-                    <!-- Purchase submission form -->
+                </p>
+                <!-- Purchase submission form -->
 
-                    <form class="purchase_info" method="post">
+                <form class="purchase_info" method="post">
+                    <div class="grid-container-res">
+                        <input class="text_field" type="number">
+                        <div class="text_des">Adult(s)</div>
 
-                        <input class="text_field" type="number"> Adult(s)
-                        <input class="text_field" type="number"> Kid(s)
-                        <input class="purchase_button" type="submit" value="submit">
-                    </form>
-                </div>
-                <!-- souvenir item section -->
+                        <input class="text_field" type="number">
+                        <div class="text_des">Kid(s)</div>
+                    </div>
+                    <input class="purchase_button" type="submit" value="submit">
+                </form>
+            </div>
+            <!-- souvenir item section -->
 
-                <div class="souv_section">
-                    <!-- Detailed description for souvenir -->
+            <div class="souv_section">
+                <!-- Detailed description for souvenir -->
 
 
-                    <p class="Souvenir_description">
+                <p class="Souvenir_description">
                     <div class=item_title>
                         <b>Souvenirs</b>
                     </div>
-                    </p>
-                    <!-- Purchase submission form -->
-
-                    <form class="purchase_info" method="post">
-                        <input type="checkbox"> Miniature
-                        <input type="checkbox"> Key Ring
-                        <input type="checkbox"> Mug Cup
-                        <input type="checkbox"> Hoodie
-                        <input type="checkbox"> Doll
-                        <input type="checkbox"> Stuffed animals
-                        <input type="checkbox"> Chocolate
-                        <input class="purchase_button" type="submit" value="submit">
-                    </form>
-                </div>
-            </div>
-        </main>
-
-
-
-
-        <footer>
-            <div class="schedule">
-                <h1>
-                    Schedule
-                </h1>
-                <p>
-                    Weekdays: 11 a.m. to 7 p.m
                 </p>
-                <p>
-                    Weekend: 9 a.m. to 6 p.m.
-                </p>
-            </div>
-            <!--contact information-->
-            <div class="contact">
-                <h1>Contact</h1>
-                <p>Phone number: +1 4234659870</p>
-                <p>email: raceland@pmail.com</p>
-                <p><a href="#">Facebook</a></p>
-                <p><a href="#">Instagram</a></p>
-                <p><a href="#">Twitter</a></p>
-            </div>
+                <!-- Purchase submission form -->
 
-        </footer>
+                <form class="purchase_info" method="post">
+                    <div class="grid-container-res">
+                        <input class="check-item" type="checkbox">
+                        <div class="text_des_souv"> Miniature </div>
+                        <input class="check-item" type="checkbox">
+                        <div class="text_des_souv"> Key Ring </div>
+                        <input class="check-item" type="checkbox">
+                        <div class="text_des_souv"> Mug Cup </div>
+                        <input class="check-item" type="checkbox">
+                        <div class="text_des_souv"> Hoodie </div>
+                        <input class="check-item" type="checkbox">
+                        <div class="text_des_souv"> Doll </div>
+                        <input class="check-item" type="checkbox">
+                        <div class="text_des_souv"> Stuffed animals </div>
+                        <input class="check-item" type="checkbox">
+                        <div class="text_des_souv"> Chocolate </div>
+                    </div>
+                    <input class="purchase_button" type="submit" value="submit">
+
+                </form>
+            </div>
+        </div>
+    </main>
+
+
+
+
+    <footer>
+        <div class="schedule">
+            <h1>
+                Schedule
+            </h1>
+            <p>
+                Weekdays: 11 a.m. to 7 p.m
+            </p>
+            <p>
+                Weekend: 9 a.m. to 6 p.m.
+            </p>
+        </div>
+        <!--contact information-->
+        <div class="contact">
+            <h1>Contact</h1>
+            <p>Phone number: +1 4234659870</p>
+            <p>email: raceland@pmail.com</p>
+            <p><a href="#">Facebook</a></p>
+            <p><a href="#">Instagram</a></p>
+            <p><a href="#">Twitter</a></p>
+        </div>
+
+    </footer>
 
 
 </body>
